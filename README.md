@@ -57,6 +57,8 @@ Sumber dataset berasal dari [Github](https://github.com/rfordatascience/tidytues
 3. **Struktur Tonal**: *“key”* (nada dasar) dan *“mode”* (mayor/minor).
 4. **Genre yang Tercakup**: Pop, Latin, Rap, Rock, R&B, dan EDM dengan tingkat popularitas yang seimbang.
 
+![Korelasi Kolom Number](asset/corelasimatrix.png) 
+
 ### **Proses Cleaning Data**  
 #### 1. Mengatasi Kekosongan Data  
 Dataset memiliki kekosongan data pada kolom `track_name`, `track_artist`, dan `track_album_name` (5 baris). Kekosongan diatasi dengan:  
@@ -129,7 +131,7 @@ Distribusi tempo:
 ### **6. Penyajian Top 10 lagu teratas berdasarkan kolom Track Name, Track Artist, Track Popularity, Popularity Score, dan Playlist Genre**
 ![Top 10 lagu teratas](asset/top10.png)
 
-### **7. Kesimpulan**  
+### **7. Analisis**  
 Analisis informasi data berdasarkan data genre musik Spotify untuk meningkatkan pengalaman pengguna. *Dataset* dikategorikan berdasarkan tempo (Fast, Moderate, Slow), dengan *temuan* bahwa lagu Fast memiliki energi tertinggi, sementara Slow unggul dalam acousticness dan loudness. *Penambahan kolom* seperti tempo category, energy acoustic ratio, dan energy efficiency memberikan wawasan baru terkait fitur musikal. *Analisis* juga menyoroti hubungan antara genre dan popularitas lagu, serta menyajikan 10 lagu teratas berdasarkan popularitas. Data telah dibersihkan untuk mengatasi kekosongan dengan nilai default. Selain itu, dilakukan pembersihan terhadap simbol atau karakter tertentu yang memengaruhi kualitas data. Proses ini memastikan data siap untuk analisis lebih lanjut. Visualisasi data membantu memahami distribusi dan hubungan antar variabel dengan lebih jelas.
 
 ---
@@ -163,4 +165,4 @@ Kami selalu terbuka untuk saran dan kolaborasi. Jangan ragu untuk membuka *issue
 **Anggota Kelompok**:  
    - *Muhammad Wahyudi - 202110370311234*  
    - *Abd. Baasithur Rizqu - 202110370311234*  
-   - *Alji Afrian - 202110370311234*
+   - *Alji Afrian - 202110370311201*
