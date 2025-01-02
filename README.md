@@ -164,5 +164,5 @@ Kami selalu terbuka untuk saran dan kolaborasi. Jangan ragu untuk membuka *issue
 **Dosen Pengampu: Yuda Munarko, S.Kom., M.Sc.**  
 **Anggota Kelompok**:  
    - *Muhammad Wahyudi - 202110370311234*  
-   - *Abd. Baasithur Rizqu - 202110370311234*  
+   - *Abd. Baasithur Rizqu - 202110370311241*  
    - *Alji Afrian - 202110370311201*
