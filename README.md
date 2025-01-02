@@ -10,7 +10,6 @@
 Spotify menghadapi tantangan dalam mempertahankan engagement pengguna akibat kesulitan memberikan rekomendasi musik yang tepat sesuai preferensi individu. Masalah ini penting karena pengalaman mendengarkan yang personal dan relevan dapat meningkatkan loyalitas pengguna serta memaksimalkan waktu yang dihabiskan di platform. Dengan demikian, analisis data ini bertujuan untuk memberikan wawasan yang mendalam terkait preferensi musik pengguna.
 
 ## 🛠️ Rencana dan Pendekatan  
-Kami menggunakan dataset open source dari [Github](https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-01-21/readme.md) yang mencakup metadata lagu Spotify, seperti:
 - **Karakteristik audio** (*danceability*, *energy*, *tempo*, *valence*).
 - **Genre playlist** dan tingkat popularitas.
 - **Durasi lagu** dan struktur tonal (*key* dan *mode*).
