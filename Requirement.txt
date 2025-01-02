@@ -1,0 +1,25 @@
+1. Salin URL Repository
+Buka halaman repository: https://github.com/Hken27/Analisis-Data-Spotify.
+Klik tombol Code (berwarna hijau).
+Salin URL repository: https://github.com/Hken27/Analisis-Data-Spotify.git
+
+
+2. Buka Terminal atau Command Prompt
+Windows: Gunakan Command Prompt atau Git Bash.
+Mac/Linux: Gunakan Terminal.
+
+
+3. Arahkan ke Folder Tujuan
+Tentukan folder di mana Anda ingin menyimpan repository.
+Gunakan perintah untuk berpindah ke folder tersebut:
+cd /path/to/your/folder
+(Ganti /path/to/your/folder dengan path folder Anda.)
+
+
+4. Clone Repository
+Jalankan perintah berikut untuk meng-clone repository:
+git clone https://github.com/Hken27/Analisis-Data-Spotify.git
+
+5. Masuk ke Folder Repository
+Setelah cloning selesai, masuk ke folder repository:
+cd Analisis-Data-Spotify
