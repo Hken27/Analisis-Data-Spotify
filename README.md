@@ -1,5 +1,5 @@
 <div align="center">
-    <a>
+    <a href="https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-01-21/readme.md">
         <img src="asset/spotify.webp" alt="Spotify Genre" width="250">
     </a>
 </div>
