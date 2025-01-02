@@ -1,4 +1,10 @@
-# Spotify Genre Data Analysis
+<div align="center">
+    <a>
+        <img src="asset/spotify.webp" alt="Spotify Genre" width="250">
+    </a>
+</div>
+
+# <div align="center">**Spotify Genre Data Analysis**</div>
 
 ## 📖 Pendahuluan  
 Spotify menghadapi tantangan dalam mempertahankan engagement pengguna akibat kesulitan memberikan rekomendasi musik yang tepat sesuai preferensi individu. Masalah ini penting karena pengalaman mendengarkan yang personal dan relevan dapat meningkatkan loyalitas pengguna serta memaksimalkan waktu yang dihabiskan di platform. Dengan demikian, analisis data ini bertujuan untuk memberikan wawasan yang mendalam terkait preferensi musik pengguna.
