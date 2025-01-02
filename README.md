@@ -46,7 +46,7 @@ Dengan analisis ini, Spotify dapat lebih memahami kebutuhan pengguna dan mencipt
 4. **seaborn (sns)**: *Dibangun di atas matplotlib dan menyediakan cara yang lebih mudah dan lebih estetik.*  
 
 ## 🧹 Data Preparation  
-Sumber dataset berasal dari [Github](https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-01-21/readme.md). Dataset ini berupa data tabular yang berisi metadata lagu-lagu Spotify, dirilis pada 2 Januari 2020. Dataset terdiri dari **32.832 baris** dan **23 kolom** dengan tipe data:  
+Sumber dataset berasal dari [Github](https://github.com/rfordatascience/tidytuesday/blob/main/data/2020/2020-01-21/readme.md). Dataset ini berupa **Data Tabular** yang berisi metadata lagu-lagu Spotify, dirilis pada 2 Januari 2020. Dataset terdiri dari **32.832 baris** dan **23 kolom** dengan tipe data:  
 - **String**: 10 kolom.  
 - **Numerik**:  
   - *float64*: 9 kolom.  
@@ -83,8 +83,59 @@ Pada kolom `track_name`, dilakukan pembersihan angka, karakter, dan simbol khusu
 | 8151   | 69gRFGOWY9OMpFJgFol1u0 | Unknown        | Unknown          | Unknown              | 0            | 2012-01-05     |  
 | ...    | ...                    | Unknown        | Unknown          | Unknown              | ...          | ...            |
 
-Selain itu, dilakukan pembersihan terhadap simbol atau karakter tertentu yang memengaruhi kualitas data. Proses ini memastikan data siap untuk analisis lebih lanjut.
 
+## 📊 Exploratory Data Analysis (EDA)  
+
+EDA bertujuan untuk menggali pola dan wawasan awal dari dataset Spotify. Berikut adalah temuan informasi yang kami dapatkan:  
+
+### **1. Penambahan Kolom Baru**: Kolom *"tempo_category"* mengindikasikan kategori tempo lagu berdasarkan kecepatannya, yang terbagi dalam tiga kategori: *Fast*, *Moderate*, dan *Slow*, Kolom *"energy_acoustic_ratio"* merepresentasikan rasio dominasi energi dibandingkan dengan elemen akustik dalam lagu. Kolom *"energy_efficiency"* mengukur tingkat efisiensi energi lagu berdasarkan metrik tertentu.  
+
+| **Track Name**                                   | **Tempo Category** | **Energy Acoustic Ratio** | **Energy Efficiency** |
+|--------------------------------------------------|--------------------|---------------------------|-----------------------|
+| I Dont Care with Justin Bieber Loud Luxury Remix | Fast               | 8.980304	                | -0.021584             |
+| Memories - Dillon Francis Remix                  | Moderate           | 11.256751		            | -0.049704             |
+| ...                                              | ...                | ...		                | ...                   |
+
+### **2. Analisis Korelasi**  
+Kolom *"track_name", "track_artist", dan "track_popularity"* : 
+
+| **Track Name**                                   | **Track Artist** | **Track Popularity** | 
+|--------------------------------------------------|------------------|----------------------|
+| I Dont Care with Justin Bieber Loud Luxury Remix | Ed Sheeran       | 66	                 |
+| Memories - Dillon Francis Remix                  | Maroon 5         | 67		             |
+| ...                                              | ...              | ...		             |
+
+### **3. Top Genre**
+![Top Genre](asset/Genre.png)    
+Dilakukan filter untuk menampilkan 10 lagu berdasarkan Track Popularity dan Playlist Genre.  
+
+### **4. Visualisasi Tempo Category dan Kontribusi dengan Energy Efficiency**  
+![Distribusi Tempo Category](asset/TempoCategory.png)    
+Musik dikategorikan menjadi *Fast* (tempo > 120 BPM), *Moderate* (90-120 BPM), dan *Slow* (< 90 BPM). Rata-rata popularitas tertinggi ditemukan pada Musik *Moderate*.  
+
+![Visualisasi Tempo Category dan Kontribusi dengan Energy Efficiency](asset/Kontribusi.png)    
+kontribusi antara Tempo Category dan Energy Efficiency.
+
+Distribusi tempo:  
+| **Tempo Kategori** | **Rata-rata Energy** | **Rata-rata Accousticness** | **Rata-rata Loudness** | **Rata-rata Energy Efficiency** |  
+|--------------------|----------------------|-----------------------------|------------------------|---------------------------------|
+| Fast               | 0.730837	            | 0.144768	                  | -6.393295	           | -0.046125                       |
+| Moderate           | 0.685130	            | 0.186271                    | -6.862769	           | -0.066358                       |
+| Slow               | 0.590837	            | 0.283334	                  | 7.790155               | -inf                            |
+
+Data ini menunjukkan rata-rata energi, acousticness, loudness, dan efisiensi energi berdasarkan kategori tempo lagu. Kategori “Fast” memiliki nilai energi tertinggi, sementara kategori “Slow” memiliki nilai acousticness dan loudness tertinggi, namun efisiensi energinya tidak terukur.
+
+### **5. Korelasi antara Popularity Score berdasarkan Playlist Genre dan Energy**  
+![Korelasi Popularity Score dan Energy](asset/korelasi.png)    
+![Korelasi Popularity Score dan Playlist Genre](asset/korelasi2.png)    
+
+### **5. Penyajian Top 10 lagu teratas berdasarkan kolom Track Name, Track Artist, Track Popularity, Popularity Score, dan Playlist Genre**
+![Top 10 lagu teratas](asset/top10.png)    
+
+### **6. Kesimpulan**  
+Analisis informasi data berdasarkan data genre musik Spotify untuk meningkatkan pengalaman pengguna. *Dataset* dikategorikan berdasarkan tempo (Fast, Moderate, Slow), dengan *temuan* bahwa lagu Fast memiliki energi tertinggi, sementara Slow unggul dalam acousticness dan loudness. *Penambahan kolom* seperti tempo category, energy acoustic ratio, dan energy efficiency memberikan wawasan baru terkait fitur musikal. *Analisis* juga menyoroti hubungan antara genre dan popularitas lagu, serta menyajikan 10 lagu teratas berdasarkan popularitas. Data telah dibersihkan untuk mengatasi kekosongan dengan nilai default. Selain itu, dilakukan pembersihan terhadap simbol atau karakter tertentu yang memengaruhi kualitas data. Proses ini memastikan data siap untuk analisis lebih lanjut. Visualisasi data membantu memahami distribusi dan hubungan antar variabel dengan lebih jelas.
+
+---
 
 ## 🤝 Kontribusi  
 Kami selalu terbuka untuk saran dan kolaborasi. Jangan ragu untuk membuka *issue* atau *pull request*.  
