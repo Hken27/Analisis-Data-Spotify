@@ -134,6 +134,25 @@ Analisis informasi data berdasarkan data genre musik Spotify untuk meningkatkan 
 
 ---
 
+## 📝 Rangkuman
+
+### 1. **Pernyataan Masalah**  
+Spotify kesulitan dalam memberikan rekomendasi musik yang sesuai dengan preferensi pengguna, yang mempengaruhi keterlibatan pengguna di platform.
+
+### 2. **Metodologi**  
+Analisis menggunakan dataset metadata lagu Spotify, dengan langkah-langkah pembersihan data, penambahan fitur baru (seperti *Energy Acoustic Ratio*), klasifikasi tempo (Fast, Moderate, Slow), dan visualisasi hubungan antar variabel.
+
+### 3. **Wawasan Menarik**  
+Lagu dengan tempo cepat (Fast) memiliki energi tinggi, sementara yang lambat (Slow) lebih unggul dalam acousticness dan loudness. Popularitas juga terkait erat dengan genre playlist.
+
+### 4. **Implikasi**  
+Hasil analisis dapat membantu Spotify mengoptimalkan algoritma rekomendasi dan memberikan pengalaman mendengarkan yang lebih personal bagi pengguna.
+
+### 5. **Keterbatasan dan Peningkatan**  
+Analisis ini terbatas pada metadata lagu dan belum menggunakan data preferensi pengguna. Penggunaan data lebih lengkap dan penerapan model pembelajaran mesin dapat meningkatkan akurasi rekomendasi.
+
+---
+
 ## 🤝 Kontribusi  
 Kami selalu terbuka untuk saran dan kolaborasi. Jangan ragu untuk membuka *issue* atau *pull request*.  
 
