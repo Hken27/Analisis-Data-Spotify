@@ -127,7 +127,7 @@ Data ini menunjukkan rata-rata energi, acousticness, loudness, dan efisiensi ene
 
 ### **5. Korelasi antara Popularity Score berdasarkan Playlist Genre dan Energy**  
 ![Korelasi Popularity Score dan Energy](asset/korelasi.png)    
-![Korelasi Popularity Score dan Playlist Genre](asset/korelasi2.png)    
+![Korelasi Popularity Score dan Playlist Genre](asset/Korelasi2.png)    
 
 ### **5. Penyajian Top 10 lagu teratas berdasarkan kolom Track Name, Track Artist, Track Popularity, Popularity Score, dan Playlist Genre**
 ![Top 10 lagu teratas](asset/top10.png)    
