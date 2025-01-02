@@ -86,7 +86,8 @@ Pada kolom `track_name`, dilakukan pembersihan angka, karakter, dan simbol khusu
 
 EDA bertujuan untuk menggali pola dan wawasan awal dari dataset Spotify. Berikut adalah temuan informasi yang kami dapatkan:  
 
-### **1. Penambahan Kolom Baru**: Kolom *"tempo_category"* mengindikasikan kategori tempo lagu berdasarkan kecepatannya, yang terbagi dalam tiga kategori: *Fast*, *Moderate*, dan *Slow*, Kolom *"energy_acoustic_ratio"* merepresentasikan rasio dominasi energi dibandingkan dengan elemen akustik dalam lagu. Kolom *"energy_efficiency"* mengukur tingkat efisiensi energi lagu berdasarkan metrik tertentu.  
+### **1. Penambahan Kolom Baru**: 
+Kolom *"tempo_category"* mengindikasikan kategori tempo lagu berdasarkan kecepatannya, yang terbagi dalam tiga kategori: *Fast*, *Moderate*, dan *Slow*, Kolom *"energy_acoustic_ratio"* merepresentasikan rasio dominasi energi dibandingkan dengan elemen akustik dalam lagu. Kolom *"energy_efficiency"* mengukur tingkat efisiensi energi lagu berdasarkan metrik tertentu.  
 
 | **Track Name**                                   | **Tempo Category** | **Energy Acoustic Ratio** | **Energy Efficiency** |
 |--------------------------------------------------|--------------------|---------------------------|-----------------------|
